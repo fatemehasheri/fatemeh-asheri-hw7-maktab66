@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color:#000 ;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.Hand {
+    display: flex;
+}
+.top{
+    top: 5em;
+    width: 75vw;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 15rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#img{
+  border: #151515 solid 2px;
+  border-radius: 70% ;
+  width: 30em;
+  height: 15em;
+  margin-top: 2rem;
+  box-shadow: 0 1em 0.5em rgb(4 34 37);
+  top: 9em;
+}
+
+.paragraph{
+  font-size: 18px;
+  margin-left: 10rem;
+}
+
+.p1{
+   margin-top: 2rem;
+}
+
+
+hr{
+width: 70%;
+margin:auto;
+border: 0.5px;
+border-bottom:0.5px solid ;
+margin-top: 200px !important; 
+border-image: linear-gradient(to right,rgb(245, 118, 44), rgb(196, 59, 196)) 1;;
+}
+h2{
+  color: white;
+  font-size: 20px;
+  margin-top: 180px;
+  text-align: center;
+}
+.title {
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h3 {
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  background-image: linear-gradient(to right,rgb(219, 85, 8),purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer span{
+    margin-left: 7px;
+}
+.Text {
+font-size: 15px;
+color: white;
+width: 200px;
+}
+.item1{
+    margin-top: 50px;
+}
+.item2{
+    margin-top: 42px;
+}
+.item3{
+    margin-top: 46px;
+    margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  .top{
+    flex-direction: column;
+  }
+  .paragraph {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+  footer {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .item1, .item2 {
+    flex: 50%;
+  }
+  .item3 {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .top{
+    flex-direction: column;
+  }
+  .paragraph {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+  .Hand {
+    justify-content: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    width: 95%;
+  }
+}
